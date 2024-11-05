@@ -5,14 +5,18 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Properties
     var window: UIWindow?
-    var appCoordinator: AppCoordinator?
-    var appFactory: AppFactory?
+    var coordinator: Coordinator?
+    var factory: AppFactory?
     
     // MARK: - Methods
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        let factory = AppFactory()
-        let appCoordinator = factory.makeAppCoordinator(window: window, factory: factory)
-        appCoordinator.start()
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        factory = AppFactory()
+        coordinator = factory?.makeAppCoordinator(window: window, factory: factory)
+        
+        coordinator?.start()
+        
         return true
     }
 }
