@@ -13,6 +13,9 @@
 		FA18BD562CDAA42700F95F7E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18BD552CDAA42700F95F7E /* Coordinator.swift */; };
 		FA18BD592CDAA5A100F95F7E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18BD582CDAA5A100F95F7E /* AppCoordinator.swift */; };
 		FA18BD5C2CDAA5EF00F95F7E /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18BD5B2CDAA5EF00F95F7E /* AppFactory.swift */; };
+		FA18BD612CDAAAF500F95F7E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18BD602CDAAAF500F95F7E /* MainTabBarController.swift */; };
+		FA18BD632CDAAB5300F95F7E /* MainTabBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18BD622CDAAB5300F95F7E /* MainTabBarFactory.swift */; };
+		FA18BD652CDAAB7900F95F7E /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18BD642CDAAB7900F95F7E /* MainTabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FA18BD552CDAA42700F95F7E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FA18BD582CDAA5A100F95F7E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FA18BD5B2CDAA5EF00F95F7E /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		FA18BD602CDAAAF500F95F7E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FA18BD622CDAAB5300F95F7E /* MainTabBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarFactory.swift; sourceTree = "<group>"; };
+		FA18BD642CDAAB7900F95F7E /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				FA18BD522CDAA40200F95F7E /* Scenes */,
+				FA18BD532CDAA41200F95F7E /* Composition */,
 				FA18BD452CDAA39A00F95F7E /* Assets.xcassets */,
 				FA18BD4A2CDAA39A00F95F7E /* Info.plist */,
-				FA18BD532CDAA41200F95F7E /* Composition */,
 			);
 			path = BooksTrack;
 			sourceTree = "<group>";
@@ -83,6 +89,7 @@
 		FA18BD522CDAA40200F95F7E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FA18BD5D2CDAAADA00F95F7E /* MainTabBar */,
 				FA18BD512CDAA3F700F95F7E /* LaunchScreen */,
 			);
 			path = Scenes;
@@ -121,6 +128,32 @@
 				FA18BD5B2CDAA5EF00F95F7E /* AppFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		FA18BD5D2CDAAADA00F95F7E /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA18BD5E2CDAAAE100F95F7E /* Presentation */,
+				FA18BD5F2CDAAAE700F95F7E /* Composition */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		FA18BD5E2CDAAAE100F95F7E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FA18BD602CDAAAF500F95F7E /* MainTabBarController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FA18BD5F2CDAAAE700F95F7E /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				FA18BD622CDAAB5300F95F7E /* MainTabBarFactory.swift */,
+				FA18BD642CDAAB7900F95F7E /* MainTabBarCoordinator.swift */,
+			);
+			path = Composition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA18BD5C2CDAA5EF00F95F7E /* AppFactory.swift in Sources */,
+				FA18BD632CDAAB5300F95F7E /* MainTabBarFactory.swift in Sources */,
+				FA18BD652CDAAB7900F95F7E /* MainTabBarCoordinator.swift in Sources */,
 				FA18BD592CDAA5A100F95F7E /* AppCoordinator.swift in Sources */,
+				FA18BD612CDAAAF500F95F7E /* MainTabBarController.swift in Sources */,
 				FA18BD562CDAA42700F95F7E /* Coordinator.swift in Sources */,
 				FA18BD3D2CDAA39A00F95F7E /* AppDelegate.swift in Sources */,
 			);
