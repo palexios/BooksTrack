@@ -1,8 +1,12 @@
-//
-//  MainTabBarFactory.swift
-//  BooksTrack
-//
-//  Created by Александр Павлицкий on 05.11.2024.
-//
+import UIKit
 
-import Foundation
+// MARK: - MainTabBarFactory
+struct MainTabBarFactory {
+    // MARK: - Methods
+    func makeChildrenCoordinators() {
+        
+    }
+    func makeTabBarController() -> UITabBarController {
+        return MainTabBarController(nibName: nil, bundle: nil)
+    }
+}
