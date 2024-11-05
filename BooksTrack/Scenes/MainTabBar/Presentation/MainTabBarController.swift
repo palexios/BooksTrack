@@ -1,8 +1,9 @@
-//
-//  MainTabBarController.swift
-//  BooksTrack
-//
-//  Created by Александр Павлицкий on 05.11.2024.
-//
+import UIKit
 
-import Foundation
+// MARK: - MainTabBarController
+final class MainTabBarController: UITabBarController {
+    // MARK: - LifeCycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
